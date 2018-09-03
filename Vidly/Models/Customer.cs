@@ -1,4 +1,6 @@
-﻿namespace Vidly.Models
+﻿using System;
+
+namespace Vidly.Models
 {
     public class Customer
     {
@@ -7,5 +9,6 @@
         public bool IsSubscribedToNewsletter { get; set; }
         public MembershipType MembershipType { get; set; }
         public byte MembershipTypeId { get; set; }
+        public DateTime? Birthdate { get; set; }
     }
 }
